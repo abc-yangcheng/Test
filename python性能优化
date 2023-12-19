@@ -1,0 +1,221 @@
+Python性能优化技巧
+Python相比C/C++这样的编译语言，在效率和性能方面存在一些不足。但是，有很多时候，Python的效率并没有想象中的那么夸张。这里笔者整理了一些Python代码加速运行的技巧。
+（1）避免全局变量
+# 不推荐写法
+import math
+size = 10000
+for x in range(size):
+    for y in range(size):
+        z = math.sqrt(x) + math.sqrt(y)
+许多程序员刚开始会用Python语言写一些简单的脚本，当编写脚本时，通常习惯了直接将其写为全局变量，例如上面的代码。但是，由于全局变量和局部变量实现方式不同，定义在全局范围内的代码运行速度会比定义在函数中的慢不少。通过将脚本语句放入函数，通常可带来15%~30%的速度提升。
+# 推荐写法
+import math
+def main():  # 定义到函数中，以减少全部变量使用
+    size = 10000
+    for x in range(size):
+        for y in range(size):
+            z = math.sqrt(x) + math.sqrt(y)
+main()
+（2）避免模块和函数属性访问
+# 不推荐写法
+import math
+def computeSqrt(size: int):
+    result = []
+    for i in range(size):
+        result.append(math.sqrt(i))
+    return result
+def main():
+    size = 10000
+    for _ in range(size):
+        result = computeSqrt(size)
+main()
+每次使用属性访问操作符时会触发特定的方法，如__getattribute__()和__getattr__()，这些方法会进行字典操作，因此会带来额外的时间开销。通过from import语句，可以消除属性访问。
+# 推荐写法
+import math
+def computeSqrt(size: int):
+    result = []
+    append = result.append
+    sqrt = math.sqrt    # 赋值给局部变量
+    for i in range(size):
+        append(sqrt(i))  # 避免result.append和math.sqrt的使用
+    return result
+def main():
+    size = 10000
+    for _ in range(size):
+        result = computeSqrt(size)
+main()
+（3）避免类内属性访问
+# 不推荐写法
+import math
+from typing import List
+class DemoClass:
+    def __init__(self, value: int):
+        self._value = value
+    def computeSqrt(self, size: int) -> List[float]:
+        result = []
+        append = result.append
+        sqrt = math.sqrt
+        for _ in range(size):
+            append(sqrt(self._value))
+        return result
+def main():
+    size = 10000
+    for _ in range(size):
+        demo_instance = DemoClass(size)
+        result = demo_instance.computeSqrt(size)
+main()
+避免.的原则也适用于类内属性，访问self._value的速度会比访问一个局部变量更慢一些。通过将需要频繁访问的类内属性赋值给一个局部变量，可以提升代码运行速度。
+# 推荐写法
+import math
+from typing import List
+class DemoClass:
+    def __init__(self, value: int):
+        self._value = value
+    def computeSqrt(self, size: int) -> List[float]:
+        result = []
+        append = result.append
+        sqrt = math.sqrt
+        value = self._value
+        for _ in range(size):
+            append(sqrt(value))  # 避免self._value的使用
+        return result
+def main():
+    size = 10000
+    for _ in range(size):
+        demo_instance = DemoClass(size)
+        demo_instance.computeSqrt(size)
+main()
+（4）字符串拼接用join而不是+
+# 不推荐写法
+import string
+from typing import List
+def concatString(string_list: List[str]) -> str:
+    result = ''
+    for str_i in string_list:
+        result += str_i
+    return result
+def main():
+    string_list = list(string.ascii_letters * 100)
+    for _ in range(10000):
+        result = concatString(string_list)
+main()
+当使用a+b拼接字符串时，由于Python中字符串是不可变对象，其会申请一块内存空间，将a和b分别复制到新申请的内存空间中。因此，如果要拼接n个字符串，会产生n-1个中间结果，每产生一个中间结果都需要申请和复制一次内存，严重影响运行效率。而使用join()拼接字符串时，会先计算出需要申请的总的内存空间，然后一次性申请所需内存，并将每个字符串元素复制到该内存中。
+# 推荐写法
+import string
+from typing import List
+def concatString(string_list: List[str]) -> str:
+    return ''.join(string_list)  # 使用 join 而不是 +
+def main():
+    string_list = list(string.ascii_letters * 100)
+    for _ in range(10000):
+        result = concatString(string_list)
+main()
+（5）利用if条件的短路特性
+# 不推荐写法
+from typing import List
+def concatString(string_list: List[str]) -> str:
+    abbreviations = {'cf.', 'e.g.', 'ex.', 'etc.', 'flg.', 'i.e.', 'Mr.', 'vs.'}
+    abbr_count = 0
+    result = ''
+    for str_i in string_list:
+        if str_i in abbreviations:
+            result += str_i
+    return result
+def main():
+    for _ in range(10000):
+        string_list = ['Mr.', 'Hat', 'is', 'Chasing', 'the', 'black', 'cat', '.']
+        result = concatString(string_list)
+main()
+if条件的短路特性是指对if a and b这样的语句，当a为False时将直接返回，不再计算b；对于if a or b这样的语句，当a为True时将直接返回，不再计算b。因此，为了节约运行时间，对于or语句，应该将值为True可能性较高的变量写在or前，将值为True可能性较高的变量写在and后。
+# 推荐写法
+from typing import List
+def concatString(string_list: List[str]) -> str:
+    abbreviations = {'cf.', 'e.g.', 'ex.', 'etc.', 'flg.', 'i.e.', 'Mr.', 'vs.'}
+    abbr_count = 0
+    result = ''
+    for str_i in string_list:
+        if str_i[-1] == '.' and str_i in abbreviations:  # 利用if条件的短路特性
+            result += str_i
+    return result
+def main():
+    for _ in range(10000):
+        string_list = ['Mr.', 'Hat', 'is', 'Chasing', 'the', 'black', 'cat', '.']
+        result = concatString(string_list)
+main()
+（5）用for循环代替while循环
+# 不推荐写法
+def computeSum(size: int) -> int:
+    sum_ = 0
+    i = 0
+    while i < size:
+        sum_ += i
+        i += 1
+    return sum_
+def main():
+    size = 10000
+    for _ in range(size):
+        sum_ = computeSum(size)
+main()
+Python的for循环比while循环快不少。
+# 推荐写法
+def computeSum(size: int) -> int:
+    sum_ = 0
+    for i in range(size):  # for 循环代替 while 循环
+        sum_ += i
+    return sum_
+def main():
+    size = 10000
+    for _ in range(size):
+        sum_ = computeSum(size)
+main()
+（6）将重复的代码移到条件语句之外
+始终寻找移除重复代码的方法，这是提升代码能力的好办法。有时，在条件的两个分支上出现重复代码，意味着这段代码将始终执行。因此，这段重复的代码可以从条件中移出，放在条件之外执行。
+# 不推荐写法
+if sold > DISCOUNT_AMOUNT:
+    total = sold * DISCOUNT_PRICE
+    label = f'Total: {total}'
+else:
+    total = sold * PRICE
+    label = f'Total: {total}'
+通过将对label变量赋值移到条件之外，我们删除了重复的代码行，并明确了条件实际控制的内容，就是计算total。
+# 推荐写法
+if sold > DISCOUNT_AMOUNT:
+    total = sold * DISCOUNT_PRICE
+else:
+    total = sold * PRICE
+label = f'Total: {total}'
+（7）将内部循环中的yield替换为yield from
+经常忽略的一个小窍门是Python的yield关键字有对应的为collections准备的yield from，因此无须使用for循环遍历集合。这将使代码变短，并删除for中的额外变量，而且消除for循环后，yield from使程序运行效率提高约15%。
+# 不推荐写法
+def get_content(entry):
+    for block in entry.get_blocks():
+        yield block
+#推荐写法。
+def get_content(entry):
+    yield from entry.get_blocks()
+（8）使用any()而不是用于循环
+常见的模式是，我们需要查找是否集合中的一个或多个项符合某些条件。这可以通过for循环完成，例如：
+# 不推荐写法
+found = False
+for thing in things:
+    if thing == other_thing:
+        found = True
+        break
+更简洁的方法是使用Python的any()和all()内置函数，清楚地显示代码的意图。
+# 推荐写法
+found = any(thing == other_thing for thing in things)
+当至少有一个元素计算为True时，any()将返回True，只有当所有元素都计算为False时，all()将返回False。如果对any()的调用找到一个值为True的元素，它可以立即返回。
+（9）用__slots__节省内存
+如果你曾经编写过一个创建了某种类的大量实例的程序，那么你可能已经注意到，你的程序会突然需要大量的内存。那是因为Python使用字典来表示类实例的属性，这使其速度很快，但内存使用效率却不是很高。通常情况下，这并不是一个严重的问题。但是，如果你的程序因此受到严重的影响，不妨试一下__slots__：
+#推荐写法。
+class Person:
+    __slots__ = ["first_name", "last_name", "phone"]
+    def __init__(self, first_name, last_name, phone):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.phone = phone
+当我们定义了__slots__属性时，Python没有使用字典来表示属性，而是使用小的固定大小的数组，这大大减少了每个实例所需的内存。使用__slots__也有一些缺点，我们不能声明任何新的属性，我们只能使用__slots__上现有的属性，而且带有__slots__的类不能使用多重继承。
+最后，笔者分享3个代码优化基本原则。
+第一，不要过早优化。优化的前提是代码能正常工作，过早地优化可能会忽视对总体性能指标的把握，在得到全局结果前不要主次颠倒。
+第二，权衡优化的代价。优化是有代价的，想解决所有性能的问题是几乎不可能的，通常面临的选择是时间换空间或空间换时间。另外，开发代价也需要考虑。
+第三，不要优化那些无关紧要的部分。如果对代码的每一部分都去优化，这些修改会使代码难以阅读和理解。如果你的代码运行速度很慢，首先要找到代码运行慢的位置，通常是内部循环，专注于运行慢的地方进行优化。在其他地方，一点时间上的损失没有什么影响。
