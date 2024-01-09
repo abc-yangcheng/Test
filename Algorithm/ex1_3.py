@@ -134,4 +134,5 @@ def getMaxSumIntervel4(arrays):
 
 if __name__ == '__main__':
     exlist = [1.5, -12.3, 3.2, -5.5, 23.2, 3.2, -1.4, -12.2, 34.2, 5.4, -7.8, 1.1, -4.9]
+    method4(exlist)
     getMaxSumIntervel4(exlist)
