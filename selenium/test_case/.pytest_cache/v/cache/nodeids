@@ -1,0 +1,4 @@
+[
+  "baidu.py::baidu::test_search_key_selenium",
+  "baidu.py::baidu::test_search_key_unittest"
+]

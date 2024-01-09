@@ -1,0 +1,417 @@
+[2019-11-29 11:26:33,950] [INFO] line:15 testlog.py;testlog-><module> this is test................................................................................
+[2019-11-29 11:26:33,950] [INFO] line:16 testlog.py;testlog-><module> this is test
+[2019-11-29 11:26:33,950] [INFO] line:17 testlog.py;testlog-><module> this is test
+[2019-11-29 11:26:33,950] [INFO] line:18 testlog.py;testlog-><module> this is test
+[2019-11-29 11:26:33,950] [INFO] line:19 testlog.py;testlog-><module> this is test
+[2019-11-29 11:26:33,978] [ERROR] line:25 testlog.py;testlog-><module> failed to open file, 
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/logUtil/testlog.py", line 20, in <module>
+    open("/home/guoweikuang/fuck.log", 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/home/guoweikuang/fuck.log'
+Stack (most recent call last):
+  File "/PycharmProjects/apiTest/logUtil/testlog.py", line 25, in <module>
+    mylogger.error("failed to open file, ", exc_info=True,stack_info=True)
+[2019-11-29 15:07:38,752] [INFO] line:80 myexcel.py;myexcel-><module> {'caseID': '大话性能_1', 'expect_result': {'code': 10000}, 'data': {'user': 'hutong1'}}
+[2019-11-29 15:07:38,753] [INFO] line:80 myexcel.py;myexcel-><module> {'caseID': '大话性能_2', 'expect_result': {'code': 10000}, 'data': {'user': 'hutong2'}}
+[2019-11-29 15:07:38,753] [INFO] line:80 myexcel.py;myexcel-><module> {'caseID': '大话性能_3', 'expect_result': {'code': 10000}, 'data': {'user': 'hutong3'}}
+[2019-11-29 15:07:38,753] [INFO] line:80 myexcel.py;myexcel-><module> {'caseID': '大话性能_4', 'expect_result': {'code': 10000}, 'data': {'user': 'hutong4'}}
+[2019-11-29 15:07:38,754] [INFO] line:80 myexcel.py;myexcel-><module> {'caseID': '大话性能_5', 'expect_result': {'code': 10000}, 'data': {'user': 'hutong5'}}
+[2019-11-29 15:09:15,024] [INFO] line:80 myexcel.py  {'data': {'user': 'hutong1'}, 'caseID': '大话性能_1', 'expect_result': {'code': 10000}}
+[2019-11-29 15:09:15,024] [INFO] line:80 myexcel.py  {'data': {'user': 'hutong2'}, 'caseID': '大话性能_2', 'expect_result': {'code': 10000}}
+[2019-11-29 15:09:15,024] [INFO] line:80 myexcel.py  {'data': {'user': 'hutong3'}, 'caseID': '大话性能_3', 'expect_result': {'code': 10000}}
+[2019-11-29 15:09:15,024] [INFO] line:80 myexcel.py  {'data': {'user': 'hutong4'}, 'caseID': '大话性能_4', 'expect_result': {'code': 10000}}
+[2019-11-29 15:09:15,024] [INFO] line:80 myexcel.py  {'data': {'user': 'hutong5'}, 'caseID': '大话性能_5', 'expect_result': {'code': 10000}}
+[2019-11-29 15:12:00,536] [INFO] line:80 myexcel.py  {'data': {'user': 'hutong1'}, 'caseID': '大话性能_1', 'expect_result': {'code': 10000}}
+[2019-11-29 15:13:05,523] [INFO] line:81 myexcel.py  {'data': {'user': 'hutong1'}, 'caseID': '大话性能_1', 'expect_result': {'code': 10000}}
+[2019-11-29 15:13:05,540] [INFO] line:81 myexcel.py  {'data': {'user': 'hutong2'}, 'caseID': '大话性能_2', 'expect_result': {'code': 10000}}
+[2019-11-29 15:13:05,553] [INFO] line:81 myexcel.py  {'data': {'user': 'hutong3'}, 'caseID': '大话性能_3', 'expect_result': {'code': 10000}}
+[2019-11-29 15:13:05,566] [INFO] line:81 myexcel.py  {'data': {'user': 'hutong4'}, 'caseID': '大话性能_4', 'expect_result': {'code': 10000}}
+[2019-11-29 15:13:05,578] [INFO] line:81 myexcel.py  {'data': {'user': 'hutong5'}, 'caseID': '大话性能_5', 'expect_result': {'code': 10000}}
+[2019-11-29 15:14:05,893] [INFO] line:81 myexcel.py  {'caseID': '大话性能_1', 'data': {'user': 'hutong1'}, 'expect_result': {'code': 10000}}
+[2019-11-29 15:14:05,909] [INFO] line:81 myexcel.py  {'caseID': '大话性能_2', 'data': {'user': 'hutong2'}, 'expect_result': {'code': 10000}}
+[2019-11-29 15:14:05,922] [INFO] line:81 myexcel.py  {'caseID': '大话性能_3', 'data': {'user': 'hutong3'}, 'expect_result': {'code': 10000}}
+[2019-11-29 15:14:05,935] [INFO] line:81 myexcel.py  {'caseID': '大话性能_4', 'data': {'user': 'hutong4'}, 'expect_result': {'code': 10000}}
+[2019-11-29 15:14:05,948] [INFO] line:81 myexcel.py  {'caseID': '大话性能_5', 'data': {'user': 'hutong5'}, 'expect_result': {'code': 10000}}
+[2019-11-29 17:22:10,221] [INFO] line:45 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:22:10,229] [INFO] line:45 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:23:33,332] [INFO] line:45 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:23:33,335] [INFO] line:45 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:24:51,998] [INFO] line:45 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:24:52,001] [INFO] line:45 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:25:19,173] [INFO] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:25:19,177] [INFO] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:26:00,790] [INFO] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:26:00,793] [INFO] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:26:16,131] [INFO] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:26:16,134] [INFO] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:27:17,150] [INFO] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:27:17,153] [INFO] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:27:51,280] [INFO] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:27:51,283] [INFO] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:28:25,660] [INFO] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:28:25,663] [INFO] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:30:48,867] [INFO] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:30:48,870] [INFO] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:32:26,876] [INFO] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:32:26,879] [INFO] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:33:02,336] [INFO] line:47 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:33:02,339] [INFO] line:47 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:34:14,090] [INFO] line:47 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:34:14,094] [INFO] line:47 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:37:19,208] [INFO] line:47 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:37:19,211] [INFO] line:47 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:40:29,491] [INFO] line:47 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:41:55,500] [INFO] line:47 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:49:22,583] [ERROR] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/Public/requestsClient.py", line 43, in post
+    json_response = json.loads(r.text)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Stack (most recent call last):
+  File "/PycharmProjects/apiTest/Public/requestsClient.py", line 68, in <module>
+    requestUtil().post(url,params)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/PycharmProjects/apiTest/Public/requestsClient.py", line 46, in post
+    mylogger.error('post请求出错，出错原因: {}'.format(e), exc_info=True,stack_info=True)
+[2019-11-29 17:51:35,480] [ERROR] line:46 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/Public/requestsClient.py", line 43, in post
+    json_response = json.loads(r.text)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-11-29 17:53:13,004] [INFO] line:48 httpcase.py  失败，最后结果
+[2019-11-29 17:53:13,007] [INFO] line:48 httpcase.py  失败，最后结果
+[2019-11-29 17:58:51,699] [INFO] line:48 httpcase.py  失败，错误结果：{'result': {'msg': '调用成功', 'code': 200}, 'code': 0}
+[2019-11-29 17:58:51,703] [INFO] line:48 httpcase.py  失败，错误结果：{'result': {'msg': '调用成功', 'code': 200}, 'code': 0}
+[2019-11-29 18:00:23,761] [INFO] line:48 httpcase.py  失败，错误结果：{'result': {'code': 200, 'msg': '调用成功'}, 'code': 0}
+[2019-11-29 18:00:23,765] [INFO] line:48 httpcase.py  失败，错误结果：{'result': {'code': 200, 'msg': '调用成功'}, 'code': 0}
+[2019-11-29 18:00:44,522] [INFO] line:48 httpcase.py  失败，错误结果：{'code': 0, 'result': {'code': 200, 'msg': '调用成功'}}
+[2019-11-29 18:00:44,526] [INFO] line:48 httpcase.py  失败，错误结果：{'code': 0, 'result': {'code': 200, 'msg': '调用成功'}}
+[2019-11-29 18:01:09,685] [INFO] line:49 httpcase.py  失败，错误结果：{'result': {'msg': '调用成功', 'code': 200}, 'code': 0}
+[2019-11-29 18:01:09,688] [INFO] line:49 httpcase.py  失败，错误结果：{'result': {'msg': '调用成功', 'code': 200}, 'code': 0}
+[2019-11-29 18:03:41,951] [INFO] line:49 httpcase.py  失败，错误结果：{'result': {'code': 200, 'msg': '调用成功'}, 'post_code': 0}
+[2019-11-29 18:03:41,954] [INFO] line:49 httpcase.py  失败，错误结果：{'result': {'code': 200, 'msg': '调用成功'}, 'post_code': 0}
+[2019-11-29 18:04:01,644] [INFO] line:49 httpcase.py  失败，错误结果：{'result': {'code': 200, 'msg': '调用成功'}, 'post_code': 0}
+[2019-11-29 18:04:01,648] [INFO] line:49 httpcase.py  失败，错误结果：{'result': {'code': 200, 'msg': '调用成功'}, 'post_code': 0}
+[2019-11-29 18:09:21,807] [INFO] line:50 httpcase.py  失败，错误结果：{'post_code': 0, 'result': {'code': 200, 'msg': '调用成功'}}
+[2019-11-29 18:09:21,811] [INFO] line:50 httpcase.py  失败，错误结果：{'post_code': 0, 'result': {'code': 200, 'msg': '调用成功'}}
+[2019-11-29 18:09:53,442] [INFO] line:44 httpcase.py  请求参数:{'password': "1222'", 'user_id': 1}, url:http://127.0.0.1:6868/dahuaxingneng/test ,返回:{'result': {'code': 200, 'msg': '调用成功'}, 'post_code': 0},预期:code=200
+[2019-11-29 18:09:53,445] [INFO] line:44 httpcase.py  请求参数:{'password': "1223'", 'user_id': 2}, url:http://127.0.0.1:6868/dahuaxingneng/test ,返回:{'result': {'code': 200, 'msg': '调用成功'}, 'post_code': 0},预期:code=302
+[2019-11-29 18:10:45,817] [INFO] line:44 httpcase.py  请求参数:{'user_id': 1, 'password': "1222'"}, url:http://127.0.0.1:6868/dahuaxingneng/test ,返回:{'result': {'code': 200, 'msg': '调用成功'}, 'post_code': 0},预期:code=200
+[2019-11-29 18:10:45,820] [INFO] line:44 httpcase.py  请求参数:{'user_id2': 2, 'password': "1223'"}, url:http://127.0.0.1:6868/dahuaxingneng/test ,返回:{'result': {'code': 302, 'msg': '请求参数错误，请检查入参'}, 'post_code': 0},预期:code=302
+[2019-11-29 18:12:01,399] [INFO] line:44 httpcase.py  请求参数:{'password': "1222'", 'user_id': 1}, url:http://127.0.0.1:6868/dahuaxingneng/test ,返回:{'post_code': 0, 'result': {'msg': '调用成功', 'code': 200}},预期:code=200
+[2019-11-29 18:12:01,403] [INFO] line:50 httpcase.py  失败，错误结果：{'post_code': 0, 'result': {'msg': '请求参数错误，请检查入参', 'code': 302}}
+[2019-11-29 18:13:29,504] [INFO] line:44 httpcase.py  请求参数:{'user_id': 1, 'password': "1222'"}, url:http://127.0.0.1:6868/dahuaxingneng/test ,返回:{'post_code': 0, 'result': {'msg': '调用成功', 'code': 200}},预期:code=200
+[2019-11-29 18:13:29,507] [ERROR] line:50 httpcase.py  失败，错误结果：{'post_code': 0, 'result': {'msg': '请求参数错误，请检查入参', 'code': 302}}
+[2019-11-30 15:40:06,669] [ERROR] line:36 myexcel.py  读取excel行数据失败：eval() arg 1 must be a string, bytes or code object
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+TypeError: eval() arg 1 must be a string, bytes or code object
+[2019-11-30 15:40:06,670] [ERROR] line:36 myexcel.py  读取excel行数据失败：name '大话性能测试接口1' is not defined
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1, in <module>
+NameError: name '大话性能测试接口1' is not defined
+[2019-11-30 15:40:06,671] [ERROR] line:36 myexcel.py  读取excel行数据失败：name 'json' is not defined
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1, in <module>
+NameError: name 'json' is not defined
+[2019-11-30 15:40:06,671] [ERROR] line:36 myexcel.py  读取excel行数据失败：invalid syntax (<string>, line 1)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1
+    http://127.0.0.1:6868/dahuaxingneng/test
+        ^
+SyntaxError: invalid syntax
+[2019-11-30 15:40:06,671] [ERROR] line:36 myexcel.py  读取excel行数据失败：name 'POST' is not defined
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1, in <module>
+NameError: name 'POST' is not defined
+[2019-11-30 15:40:06,671] [ERROR] line:36 myexcel.py  读取excel行数据失败：invalid syntax (<string>, line 1)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1
+    code=200
+        ^
+SyntaxError: invalid syntax
+[2019-11-30 15:40:06,671] [ERROR] line:36 myexcel.py  读取excel行数据失败：eval() arg 1 must be a string, bytes or code object
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+TypeError: eval() arg 1 must be a string, bytes or code object
+[2019-11-30 15:40:06,671] [ERROR] line:36 myexcel.py  读取excel行数据失败：name '大话性能测试接口2' is not defined
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1, in <module>
+NameError: name '大话性能测试接口2' is not defined
+[2019-11-30 15:40:06,671] [ERROR] line:36 myexcel.py  读取excel行数据失败：name 'json' is not defined
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1, in <module>
+NameError: name 'json' is not defined
+[2019-11-30 15:40:06,672] [ERROR] line:36 myexcel.py  读取excel行数据失败：invalid syntax (<string>, line 1)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1
+    http://127.0.0.1:6868/dahuaxingneng/test
+        ^
+SyntaxError: invalid syntax
+[2019-11-30 15:40:06,672] [ERROR] line:36 myexcel.py  读取excel行数据失败：name 'POST' is not defined
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1, in <module>
+NameError: name 'POST' is not defined
+[2019-11-30 15:40:06,672] [ERROR] line:36 myexcel.py  读取excel行数据失败：invalid syntax (<string>, line 1)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1
+    code=301
+        ^
+SyntaxError: invalid syntax
+[2019-11-30 15:40:06,696] [ERROR] line:36 myexcel.py  读取excel行数据失败：eval() arg 1 must be a string, bytes or code object
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+TypeError: eval() arg 1 must be a string, bytes or code object
+[2019-11-30 15:40:06,696] [ERROR] line:36 myexcel.py  读取excel行数据失败：name '大话性能测试接口1' is not defined
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1, in <module>
+NameError: name '大话性能测试接口1' is not defined
+[2019-11-30 15:40:06,696] [ERROR] line:36 myexcel.py  读取excel行数据失败：name 'json' is not defined
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1, in <module>
+NameError: name 'json' is not defined
+[2019-11-30 15:40:06,696] [ERROR] line:36 myexcel.py  读取excel行数据失败：invalid syntax (<string>, line 1)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1
+    http://127.0.0.1:6868/dahuaxingneng/test
+        ^
+SyntaxError: invalid syntax
+[2019-11-30 15:40:06,696] [ERROR] line:36 myexcel.py  读取excel行数据失败：name 'POST' is not defined
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1, in <module>
+NameError: name 'POST' is not defined
+[2019-11-30 15:40:06,696] [ERROR] line:36 myexcel.py  读取excel行数据失败：invalid syntax (<string>, line 1)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1
+    code=200
+        ^
+SyntaxError: invalid syntax
+[2019-11-30 15:40:06,697] [ERROR] line:36 myexcel.py  读取excel行数据失败：eval() arg 1 must be a string, bytes or code object
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+TypeError: eval() arg 1 must be a string, bytes or code object
+[2019-11-30 15:40:06,697] [ERROR] line:36 myexcel.py  读取excel行数据失败：name '大话性能测试接口2' is not defined
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1, in <module>
+NameError: name '大话性能测试接口2' is not defined
+[2019-11-30 15:40:06,697] [ERROR] line:36 myexcel.py  读取excel行数据失败：name 'json' is not defined
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1, in <module>
+NameError: name 'json' is not defined
+[2019-11-30 15:40:06,697] [ERROR] line:36 myexcel.py  读取excel行数据失败：invalid syntax (<string>, line 1)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1
+    http://127.0.0.1:6868/dahuaxingneng/test
+        ^
+SyntaxError: invalid syntax
+[2019-11-30 15:40:06,697] [ERROR] line:36 myexcel.py  读取excel行数据失败：name 'POST' is not defined
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1, in <module>
+NameError: name 'POST' is not defined
+[2019-11-30 15:40:06,697] [ERROR] line:36 myexcel.py  读取excel行数据失败：invalid syntax (<string>, line 1)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/excelUtil/myexcel.py", line 33, in read_all_data_line_by_line
+    data.append(eval(cell.value))
+  File "<string>", line 1
+    code=301
+        ^
+SyntaxError: invalid syntax
+[2019-11-30 15:40:06,721] [INFO] line:56 httpcase.py  请求参数:{'user_id': 1, 'password': "1222'"}, url:http://127.0.0.1:6868/dahuaxingneng/test ,返回:{'result': {'code': 200, 'msg': '调用成功'}, 'post_code': 0},预期:code=200
+[2019-11-30 15:40:06,724] [ERROR] line:62 httpcase.py  失败，错误结果：{'result': {'code': 302, 'msg': '请求参数错误，请检查入参'}, 'post_code': 0}
+[2019-11-30 15:45:25,482] [ERROR] line:51 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/Public/requestsClient.py", line 48, in post
+    json_response = json.loads(r.text)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-11-30 15:48:15,034] [ERROR] line:51 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/Public/requestsClient.py", line 48, in post
+    json_response = json.loads(r.text)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-11-30 15:49:30,673] [ERROR] line:52 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/Public/requestsClient.py", line 49, in post
+    json_response = json.loads(r.text)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-11-30 15:50:21,935] [ERROR] line:53 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/Public/requestsClient.py", line 50, in post
+    json_response = json.loads(r.text)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-11-30 15:50:42,967] [ERROR] line:53 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/Public/requestsClient.py", line 50, in post
+    json_response = json.loads(r.text)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-11-30 15:51:10,091] [ERROR] line:54 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/Public/requestsClient.py", line 51, in post
+    json_response = json.loads(r.text)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-11-30 15:53:42,857] [ERROR] line:55 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/Public/requestsClient.py", line 51, in post
+    json_response = json.loads(r.text)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-11-30 15:54:39,165] [INFO] line:58 httpcase.py  请求参数:{
+ "user_id": 1,
+ "password": "1222"
+}, url:http://127.0.0.1:6868/dahuaxingneng/test ,返回:{'result': {'msg': '调用成功', 'code': 200}, 'post_code': 0},预期:code=200
+[2019-11-30 15:54:39,168] [ERROR] line:64 httpcase.py  失败，错误结果：{'result': {'msg': '请求参数错误，请检查入参', 'code': 302}, 'post_code': 0}
+[2019-11-30 15:57:00,566] [INFO] line:58 httpcase.py  请求参数:{
+ "user_id": 1,
+ "password": "1222"
+}, url:http://127.0.0.1:6868/dahuaxingneng/test ,返回:{'post_code': 0, 'result': {'msg': '调用成功', 'code': 200}},预期:code=200
+[2019-11-30 15:57:00,568] [ERROR] line:64 httpcase.py  失败，错误结果：{'post_code': 0, 'result': {'msg': '请求参数错误，请检查入参', 'code': 302}}
+[2019-11-30 15:57:49,823] [INFO] line:58 httpcase.py  请求参数:{
+ "user_id": 1,
+ "password": "1222"
+}, url:http://127.0.0.1:6868/dahuaxingneng/test ,返回:{'result': {'msg': '调用成功', 'code': 200}, 'post_code': 0},预期:code=200
+[2019-11-30 15:57:49,826] [ERROR] line:64 httpcase.py  失败，错误结果：{'result': {'msg': '请求参数错误，请检查入参', 'code': 302}, 'post_code': 0}
+[2019-11-30 16:05:39,833] [INFO] line:59 httpcase.py  成功，case id 1
+[2019-11-30 16:05:39,836] [ERROR] line:65 httpcase.py  失败，case id 2 ，请求参数：{
+ "user_id2": 2,
+ "password": "1223"
+}, url: http://127.0.0.1:6868/dahuaxingneng/test, 数据类型：json, 请求类型：POST,错误结果：{'post_code': 0, 'result': {'code': 302, 'msg': '请求参数错误，请检查入参'}}
+[2019-11-30 16:06:51,364] [ERROR] line:55 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/Public/requestsClient.py", line 51, in post
+    json_response = json.loads(r.text)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-11-30 16:08:02,229] [ERROR] line:56 requestsClient.py  post请求出错，出错原因: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/PycharmProjects/apiTest/Public/requestsClient.py", line 52, in post
+    json_response = json.loads(r.text)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-11-30 16:08:48,124] [INFO] line:59 httpcase.py  成功，case id 1
+[2019-11-30 16:08:48,127] [ERROR] line:65 httpcase.py  失败，case id 2 ，请求参数：{
+ "user_id2": 2,
+ "password": "1223"
+}, url: http://127.0.0.1:6868/dahuaxingneng/test, 数据类型：json, 请求类型：POST,错误结果：{'result': {'msg': '请求参数错误，请检查入参', 'code': 302}, 'post_code': 0}
+[2019-11-30 16:10:54,333] [INFO] line:59 httpcase.py  成功，case id 1
+[2019-11-30 16:10:54,337] [ERROR] line:65 httpcase.py  失败，case id 2 ，请求参数：{
+ "user_id2": 2,
+ "password": "1223"
+}, url: http://127.0.0.1:6868/dahuaxingneng/test, 数据类型：json, 请求类型：POST,错误结果：{'result': {'msg': '请求参数错误，请检查入参', 'code': 302}, 'post_code': 0}
+[2019-11-30 16:11:28,460] [INFO] line:59 httpcase.py  成功，case id 1
+[2019-11-30 16:11:28,462] [ERROR] line:65 httpcase.py  失败，case id 2 ，请求参数：{
+ "user_id2": 2,
+ "password": "1223"
+}, url: http://127.0.0.1:6868/dahuaxingneng/test, 数据类型：json, 请求类型：POST,错误结果：{'result': {'code': 302, 'msg': '请求参数错误，请检查入参'}, 'post_code': 0}
+[2019-11-30 16:12:32,811] [INFO] line:60 httpcase.py  成功，case id 1
+[2019-11-30 16:12:32,814] [ERROR] line:66 httpcase.py  失败，case id 2 ，请求参数：{ "user_id2": 2, "password": "1223"}, url: http://127.0.0.1:6868/dahuaxingneng/test, 数据类型：json, 请求类型：POST,错误结果：{'post_code': 0, 'result': {'code': 302, 'msg': '请求参数错误，请检查入参'}}
+[2019-11-30 16:14:20,830] [INFO] line:60 httpcase.py  成功，case id 1
+[2019-11-30 16:14:20,832] [ERROR] line:66 httpcase.py  失败，case id 2 ，请求参数：{ "user_id2": 2, "password": "1223"}, url: http://127.0.0.1:6868/dahuaxingneng/test, 数据类型：json, 请求类型：POST,错误结果：{'result': {'code': 302, 'msg': '请求参数错误，请检查入参'}, 'post_code': 0}
+[2019-12-25 17:47:51,997] [INFO] line:86 myexcel.py  {'ip': '127.0.0.1', 'users': '[{\n "username": "tester1",\n "passwd": "tester1"\n}]', 'port': 31000, 'id': 1, 'vendor': 'hw'}
+[2019-12-25 17:47:52,002] [INFO] line:86 myexcel.py  {'ip': '127.0.0.1', 'users': '[{\n "username": "tester1",\n "passwd": "tester1"\n},{\n "username": "tester1",\n "passwd": "tester1"\n},{\n "username": "tester1",\n "passwd": "tester1"\n}]', 'port': 31002, 'id': 2, 'vendor': 'zx'}
