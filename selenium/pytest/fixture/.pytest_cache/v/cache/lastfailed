@@ -1,0 +1,10 @@
+{
+  "test_fixtures_01.py::test_multiply_3_4": true,
+  "test_fixtures_01.py::test_multiply_a_3": true,
+  "test_fixtures_02.py::TestMultiply::test_numbers_5_6": true,
+  "test_fixtures_02.py::TestMultiply::test_strings_b_2": true,
+  "test_parameterize.py::test_pow[case1]": true,
+  "test_parameterize.py::test_pow[case2]": true,
+  "test_parameterize.py::test_pow[case3]": true,
+  "test_parameterize.py::test_pow[case4]": true
+}

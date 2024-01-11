@@ -1,0 +1,15 @@
+{
+  "main.py::test_answer": true,
+  "test_assert.py::test_add_1": true,
+  "test_assert.py::test_add_2": true,
+  "test_assert.py::test_add_3": true,
+  "test_assert.py::test_add_4": true,
+  "fixture/test_fixtures_01.py::test_multiply_3_4": true,
+  "fixture/test_fixtures_01.py::test_multiply_a_3": true,
+  "fixture/test_fixtures_02.py::TestMultiply::test_numbers_5_6": true,
+  "fixture/test_fixtures_02.py::TestMultiply::test_strings_b_2": true,
+  "fixture/test_parameterize.py::test_pow[case1]": true,
+  "fixture/test_parameterize.py::test_pow[case2]": true,
+  "fixture/test_parameterize.py::test_pow[case3]": true,
+  "fixture/test_parameterize.py::test_pow[case4]": true
+}

@@ -1,0 +1,15 @@
+[
+  "fixture/test_fixtures_01.py::test_multiply_3_4",
+  "fixture/test_fixtures_01.py::test_multiply_a_3",
+  "fixture/test_fixtures_02.py::TestMultiply::test_numbers_5_6",
+  "fixture/test_fixtures_02.py::TestMultiply::test_strings_b_2",
+  "fixture/test_parameterize.py::test_pow[case1]",
+  "fixture/test_parameterize.py::test_pow[case2]",
+  "fixture/test_parameterize.py::test_pow[case3]",
+  "fixture/test_parameterize.py::test_pow[case4]",
+  "main.py::test_answer",
+  "test_assert.py::test_add_1",
+  "test_assert.py::test_add_2",
+  "test_assert.py::test_add_3",
+  "test_assert.py::test_add_4"
+]

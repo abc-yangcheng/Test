@@ -1,0 +1,11 @@
+[
+  "conftest.py::test_baidu",
+  "test_fixtures_01.py::test_multiply_3_4",
+  "test_fixtures_01.py::test_multiply_a_3",
+  "test_fixtures_02.py::TestMultiply::test_numbers_5_6",
+  "test_fixtures_02.py::TestMultiply::test_strings_b_2",
+  "test_parameterize.py::test_pow[case1]",
+  "test_parameterize.py::test_pow[case2]",
+  "test_parameterize.py::test_pow[case3]",
+  "test_parameterize.py::test_pow[case4]"
+]
